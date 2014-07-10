@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JGore - open source commander</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}" >
+    <script type="text/javaScript" src="{% static "js/bootstrap.js" %}"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>GoreIT - IT center</h1>
+
+<div class="navbar">
+  <div class="navbar-inner">
+  <ul class="nav">
+      <li> <a href="/news">News</a></li>
+      <li><a href="/cv">CV</a></li>
+      <li><a href="/technologie">Technologie</a></li>
+        <li><a href="/o_mnie">O mnie</a></li>
+      <li><a href="/kontakt">Kontakt</a></li>
+  </ul>
+  </div>
+</div>
+    {% block content %}
+    {% endblock %}
+<p> <center><a  href=""> GoreIT </a></center></p>
+        </div>
+</body>
+
+</html>
